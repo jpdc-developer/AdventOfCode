@@ -1,3 +1,5 @@
+# with open("input.txt", "r") as f:
+# use with to properly close file when no longer needed
 f = open("input.txt", "r")
 lines = f.readlines()
 
@@ -5,6 +7,9 @@ accumulator = 0
 number_characters = ""
 
 for line in lines:
+    # use list comprehension to extract digits
+    # instead of 2 nested for loops with if statements and breaks
+    # digits = [char for char in line if char.isdecimal()]
     for character in line:
         if character.isdecimal():
             number_characters += character

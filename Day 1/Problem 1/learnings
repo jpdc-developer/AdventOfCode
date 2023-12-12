@@ -1,0 +1,9 @@
+- list comprehension - can be used to create lists from lists
+  with the inclusion of a filter if condition
+
+- always using with (like using in c#) to safely handle
+  resources when opening files
+
+- python can cast e.g. `int(string)`. I wonder if there's a safe way to cast e.g. c# TryParse
+
+- python can access last elements of an array using negative indices `list(-X)`
